@@ -1,0 +1,22 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.env
+venv/
+env/
+*.venv
+
+# Output folders
+output/
+resumes/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Streamlit config cache
+.streamlit/config.toml

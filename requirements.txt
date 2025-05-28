@@ -1,5 +1,7 @@
 streamlit
+spacy
+pandas
+scikit-learn
+flashtext
 pdfplumber
 python-docx
-scikit-learn
-spacy

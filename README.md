@@ -1,22 +1,35 @@
-# 🧠 Resume Screener Tool (Python + Streamlit)
+# 📄 Resume Screener Tool
 
-A smart resume screener built in Python using PDF/DOCX parsing, TF-IDF, spaCy, and Streamlit.
+A resume screening tool built using **Python**, **Streamlit**, **spaCy**, and **scikit-learn** that matches resumes to a job description based on skills and experience.
+
+---
 
 ## 🚀 Features
-- Upload multiple resumes
-- Match against a job description
-- Extract skills and experience using spaCy NER
-- Upload job descriptions from `.txt` or `.docx`
-- View ranked results with match scores
-- Save results to CSV
 
-## 📦 Requirements
+- Upload or paste a job description (supports `.txt` and `.docx`)
+- Upload multiple resumes in `.pdf` or `.docx`
+- Extracts:
+  - Relevant **skills**
+  - **Experience** in years
+- Computes a **match score** based on:
+  - Skill match (70%)
+  - Experience match (30%)
+- Displays missing skills and saves results in `output/results.csv`
+
+---
+
+## 📂 How to Run
+
 ```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/resume-screener.git
+cd resume-screener
+
+# 2. Install dependencies
 pip install -r requirements.txt
-python -m spacy download en_core_web_sm
-```
 
-## ▶️ Run the App
-```bash
+# 3. Download spaCy model
+python -m spacy download en_core_web_sm
+
+# 4. Run the app
 streamlit run app.py
-```
